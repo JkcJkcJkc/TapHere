@@ -42,3 +42,23 @@ body > div{
   height: 100%;
   display: block;
 }
+#content{
+  background-image: url("https://xt30sf.b-cdn.net/media/6d53260e43f9675a556f0.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.tut-hero{
+  min-height: 180px;
+  padding: 28px 20px 30px;
+  background-image: url("https://xt30sf.b-cdn.net/media/2f52e59ca8f16.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tut-hero-icon{
+  display: none;
+}
