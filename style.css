@@ -1,41 +1,44 @@
-.tut-hero-icon img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+*{
+  box-sizing: border-box;
 }
-.tut-hero-icon svg{
-    .tut-hero-icon img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+
+html, body{
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: #000;
 }
-.tut-hero-icon svg{
-  html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100%;
-    overflow-x: hidden;
-    background: #000;
+
+body > div{
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #content,
 #page,
-.tut-center {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+.tut-center{
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.tut-section {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+.tut-section{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-  *{
-    box-sizing:border-box;
+
+.tut-hero-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-  body > div{
-    margin:0 !important;
-    padding:0 !important;
+
+.tut-hero-icon svg{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
