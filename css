@@ -1,0 +1,41 @@
+.tut-hero-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tut-hero-icon svg{
+    .tut-hero-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tut-hero-icon svg{
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    overflow-x: hidden;
+    background: #000;
+}
+
+#content,
+#page,
+.tut-center {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tut-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  *{
+    box-sizing:border-box;
+}
+  body > div{
+    margin:0 !important;
+    padding:0 !important;
+}
