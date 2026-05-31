@@ -1,358 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JKC88 Tutorial Center</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JKC88 Review POV</title>
 <style>
-*{
-  box-sizing:border-box;
-}
-
-html,body{
-  margin:0;
-  padding:0;
-  width:100%;
-  overflow-x:hidden;
-  background:#050505;
-  font-family:'Poppins',Arial,sans-serif;
-}
-
-body{
-  background-image:url("https://xt30sf.b-cdn.net/media/6d53260e43f9675a556f0.png");
-  background-size:cover;
-  background-position:center top;
-  background-repeat:repeat-y;
-}
-
-.tut-center{
-  width:100%;
-  min-height:100vh;
-  color:#f5f1df;
-}
-
-/* HERO IMAGE FIX */
-/* DESKTOP */
-.tut-hero{
-  width:100%;
-  height:240px;
-
-  background-image:
-    linear-gradient(to bottom, rgba(0,0,0,.10), rgba(0,0,0,.55)),
-    url("https://xt30sf.b-cdn.net/media/2f52e59ca8f16.png");
-
-  background-size:contain;
-  background-position:center center;
-  background-repeat:no-repeat;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-
-  position:relative;
-  overflow:hidden;
-
-  border-bottom:1px solid rgba(248,221,118,.25);
-}
-
-/* PHONE */
-@media(max-width:768px){
-
-  .tut-hero{
-    height:160px;
-    background-size:cover;
-  }
-
-}
-
-.tut-hero-content{
-  position:relative;
-  z-index:2;
-  padding:0 16px;
-}
-
-.tut-hero h1{
-  font-size:28px;
-  font-weight:800;
-  margin:0 0 6px;
-  line-height:1.1;
-  color:#fff;
-  text-shadow:0 3px 12px rgba(0,0,0,.75);
-}
-
-.tut-hero h1 em{
-  font-style:normal;
-  color:#F8DD76;
-}
-
-.tut-hero p{
-  margin:0;
-  font-size:13px;
-  font-weight:700;
-  color:#fff1b0;
-  text-shadow:0 2px 8px rgba(0,0,0,.7);
-}
-
-.tag{
-  display:inline-block;
-  margin-top:12px;
-  padding:6px 16px;
-  border:1px solid rgba(248,221,118,.55);
-  border-radius:999px;
-  color:#F8DD76;
-  background:rgba(0,0,0,.35);
-  font-size:10px;
-  font-weight:800;
-  letter-spacing:.8px;
-}
-
-/* MAIN */
-.tut-section{
-  width:100%;
-  max-width:500px;
-  margin:0 auto;
-  padding:0 16px 20px;
-}
-
-.tut-label-badge{
-  margin:24px 0 14px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.badge-text{
-  font-size:13px;
-  font-weight:900;
-  color:#F8DD76;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  padding:6px 16px;
-  border:1px solid rgba(248,221,118,.55);
-  border-radius:10px;
-  background:linear-gradient(180deg,#17171a 0%, #101013 100%);
-  white-space:nowrap;
-}
-
-.badge-line{
-  flex:1;
-  height:2px;
-  background:linear-gradient(to right,#C69A28,transparent);
-}
-
-.tut-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-}
-
-.tut-card{
-  background:linear-gradient(180deg,#17171a 0%,#101013 100%);
-  border-radius:14px;
-  padding:18px 10px 14px;
-  text-align:center;
-  text-decoration:none;
-  border:1px solid rgba(248,221,118,.25);
-  box-shadow:0 8px 20px rgba(0,0,0,.28);
-  min-height:128px;
-  display:block;
-  transition:.2s ease;
-}
-
-.tut-card:hover{
-  transform:translateY(-2px);
-  border-color:rgba(248,221,118,.6);
-}
-
-.tut-card-icon{
-  width:46px;
-  height:46px;
-  border-radius:14px;
-  margin:0 auto 10px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:linear-gradient(180deg,#F8DD76 0%,#C69A28 100%);
-}
-
-.tut-card-icon svg{
-  width:22px;
-  height:22px;
-  fill:#1b1204;
-}
-
-.tut-card h3{
-  font-size:12px;
-  font-weight:800;
-  color:#FFF1B0;
-  margin:0 0 3px;
-  line-height:1.25;
-}
-
-.tut-card p{
-  font-size:10px;
-  font-weight:600;
-  color:#ab9a65;
-  margin:0;
-}
-
-.tut-footer{
-  text-align:center;
-  padding:22px 16px 26px;
-  font-size:11px;
-  color:#ab9a65;
-}
-
-.tut-footer a{
-  color:#F8DD76;
-  font-weight:800;
-  text-decoration:none;
-}
-
-/* TABLET */
-@media(max-width:768px){
-  .tut-hero{
-    height:190px;
-    background-size:cover;
-  }
-
-  .tut-hero h1{
-    font-size:24px;
-  }
-
-  .tut-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-  }
-}
-
-/* PHONE */
-@media(max-width:420px){
-  .tut-hero{
-    height:155px;
-    background-size:cover;
-    background-position:center center;
-  }
-
-  .tut-hero h1{
-    font-size:21px;
-  }
-
-  .tut-hero p{
-    font-size:11px;
-  }
-
-  .tag{
-    font-size:9px;
-    padding:5px 12px;
-  }
-
-  .tut-section{
-    padding:0 12px 20px;
-  }
-}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#0d0d0f;color:#fff;line-height:1.6}
+.wrap{max-width:900px;margin:auto;padding:24px}
+.hero{background:linear-gradient(135deg,#111,#2b2100);border:1px solid #d6aa35;border-radius:22px;padding:32px;text-align:center}
+.badge{display:inline-block;background:#d6aa35;color:#111;padding:6px 14px;border-radius:99px;font-weight:bold;margin-bottom:14px}
+h1{font-size:32px;margin-bottom:12px}
+p{color:#ddd;margin-bottom:14px}
+.card{background:#171719;border:1px solid #333;border-radius:18px;padding:22px;margin-top:20px}
+.score{font-size:42px;color:#ffd35a;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+.item{background:#101012;border:1px solid #2f2f33;border-radius:16px;padding:18px}
+.btn{display:block;text-align:center;margin-top:24px;background:#d6aa35;color:#111;text-decoration:none;font-weight:bold;padding:16px;border-radius:14px}
+.btn:hover{background:#ffcf4a}
+.note{font-size:13px;color:#aaa;margin-top:20px;text-align:center}
+.footer{text-align:center;color:#888;font-size:13px;margin:26px 0}
 </style>
 </head>
 
 <body>
+<div class="wrap">
 
-<div class="tut-center">
+  <section class="hero">
+    <div class="badge">POV REVIEW</div>
+    <h1>Saya Cuba Check JKC88 — Ini Review Ringkas Saya</h1>
+    <p>
+      Ini bukan promosi. Ini cuma review ringkas berdasarkan pengalaman pengguna:
+      interface, akses, support, dan info asas sebelum buat keputusan sendiri.
+    </p>
+    <a class="btn" href="https://jkcjkc.live/RFFacebookAd02">Visit Official Page</a>
+  </section>
 
-  <div class="tut-hero">
-    <div class="tut-hero-content">
-      <h1>Tutorial <em>Center</em></h1>
-      <p>Choose A Tutorial To Get Started</p>
-      <div class="tag">★ STEP-BY-STEP GUIDE</div>
-    </div>
-  </div>
+  <section class="card">
+    <h2>Overall First Impression</h2>
+    <div class="score">4.6 / 5</div>
+    <p>
+      Dari pandangan pertama, laman nampak simple, loading agak cepat,
+      dan susunan menu mudah difahami walaupun untuk user baru.
+    </p>
+  </section>
 
-  <div class="tut-section">
-
-    <div class="tut-label-badge">
-      <div class="badge-text">Getting Started</div>
-      <div class="badge-line"></div>
-    </div>
-
-    <div class="tut-grid">
-      <a href="#" class="tut-card">
-        <div class="tut-card-icon">
-          <svg viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-        </div>
-        <h3>Free Register RM88</h3>
-        <p>Click Here</p>
-      </a>
-
-      <a href="#" class="tut-card">
-        <div class="tut-card-icon">
-          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
-        </div>
-        <h3>Free Spin Event 50X</h3>
-        <p>Click Here</p>
-      </a>
+  <section class="grid">
+    <div class="item">
+      <h3>✅ Interface</h3>
+      <p>Design kemas, button jelas, dan mudah navigate dari mobile.</p>
     </div>
 
-    <div class="tut-label-badge">
-      <div class="badge-text">Top Up</div>
-      <div class="badge-line"></div>
+    <div class="item">
+      <h3>✅ Support</h3>
+      <p>Bahagian bantuan nampak mudah dicari untuk pertanyaan lanjut.</p>
     </div>
 
-    <div class="tut-grid">
-      <a href="#" class="tut-card"><div class="tut-card-icon"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9z"/></svg></div><h3>QR Code / Online Transfer</h3><p>E-Wallet / Bank</p></a>
-
-      <a href="#" class="tut-card"><div class="tut-card-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div><h3>Telco Pin</h3><p>Telco Reload</p></a>
-
-      <a href="#" class="tut-card"><div class="tut-card-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2z"/></svg></div><h3>Pindahan Atas Talian</h3><p>E-Wallet / Bank / ATM</p></a>
+    <div class="item">
+      <h3>✅ Mobile Friendly</h3>
+      <p>Layout sesuai untuk phone, tidak terlalu berat atau confusing.</p>
     </div>
 
-    <div class="tut-label-badge">
-      <div class="badge-text">Bonus & Withdraw</div>
-      <div class="badge-line"></div>
+    <div class="item">
+      <h3>⚠️ Reminder</h3>
+      <p>Sila semak terma, risiko, dan pastikan ikut undang-undang kawasan anda.</p>
     </div>
+  </section>
 
-    <div class="tut-grid">
-      <a href="#" class="tut-card"><div class="tut-card-icon"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2z"/></svg></div><h3>How To Claim Bonus</h3><p>Claim Your Reward</p></a>
+  <section class="card">
+    <h2>Kesimpulan POV</h2>
+    <p>
+      Kalau nak tengok sendiri, boleh masuk ke official page dan nilai sendiri.
+      Jangan terburu-buru, baca info dahulu, dan gunakan dengan bertanggungjawab.
+    </p>
+    <a class="btn" href="https://jkcjkc.live/RFFacebookAd02">Check Official Page</a>
+    <p class="note">18+ only. Please play responsibly. This page is for review/information only.</p>
+  </section>
 
-      <a href="#" class="tut-card"><div class="tut-card-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2z"/></svg></div><h3>How To Withdraw</h3><p>Cash Out Winnings</p></a>
-
-      <a href="#" class="tut-card"><div class="tut-card-icon"><svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11C16.5 7.69 17.21 8 18 8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92S20.92 20.61 20.92 19 19.61 16.08 18 16.08z"/></svg></div><h3>Share Earn</h3><p>Invite & Get Commission</p></a>
-    </div>
-
-  </div>
-
-  <div class="tut-footer">
-    <p>Need more help? Contact our <a href="#">24/7 Live Chat</a></p>
+  <div class="footer">
+    Independent POV review page • Not financial advice • 18+
   </div>
 
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const targetLink = "https://jkc88.win/RFA15006762";
-  document.querySelectorAll("a").forEach(function(el) {
-    el.href = targetLink;
-    el.target = "_blank";
-    el.rel = "noopener noreferrer";
-  });
-});
-</script>
-
 </body>
 </html>
-
-<!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-  ttq.load('D81J4EJC77U31FV0AC10');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
